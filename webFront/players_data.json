@@ -1,0 +1,280 @@
+{
+    "players": [
+        {
+            "name": "Aaron Ramsdale",
+            "birth": "1998-05-14",
+            "nationality": "ENG",
+            "role": "goalkeeper",
+            "value": 3.8e7,
+            "number": 1,
+            "pictures": [
+                "./player_images/aaron_ramsdale_1.png",
+                "./player_images/aaron_ramsdale_2.png"
+            ]
+        },
+        {
+            "name": "Matt Turner",
+            "birth": "1994-06-24",
+            "nationality": "USA",
+            "role": "goalkeeper",
+            "value": 5.0e6,
+            "number": 30,
+            "pictures": [
+                "./player_images/matt_turner_1.png",
+                "./player_images/matt_turner_2.png"
+            ]
+        },
+        {
+            "name": "William Saliba",
+            "birth": "2001-03-24",
+            "nationality": "FRA",
+            "role": "defender",
+            "value": 5.5e7,
+            "number": 12,
+            "pictures": [
+                "./player_images/william_saliba_1.png",
+                "./player_images/william_saliba_2.png"
+            ]
+        },
+        {
+            "name": "Gabriel Magalhaes",
+            "birth": "1997-12-19",
+            "nationality": "BRA",
+            "role": "defender",
+            "value": 5.0e7,
+            "number": 6,
+            "pictures": [
+                "./player_images/gabriel_magalhaes_1.png",
+                "./player_images/gabriel_magalhaes_2.png"
+            ]
+        },
+        {
+            "name": "Jakub Kiwior",
+            "birth": "2000-02-15",
+            "nationality": "POL",
+            "role": "defender",
+            "value": 2.0e7,
+            "number": 15,
+            "pictures": [
+                "./player_images/jakub_kiwior_1.png",
+                "./player_images/jakub_kiwior_2.png"
+            ]
+        },
+        {
+            "name": "Rob Holding",
+            "birth": "1997-09-20",
+            "nationality": "ENG",
+            "role": "defender",
+            "value": 1.0e7,
+            "number": 16,
+            "pictures": [
+                "./player_images/rob_holding_1.png",
+                "./player_images/rob_holdin_2.png"
+            ]
+        },
+        {
+            "name": "Oleksandr Zinchenko",
+            "birth": "1996-12-15",
+            "nationality": "UKR",
+            "role": "defender",
+            "value": 4.0e7,
+            "number": 35,
+            "pictures": [
+                "./player_images/oleksandr_zinchenko_1.png",
+                "./player_images/oleksandr_zinchenko_2.png"
+            ]
+        },
+        {
+            "name": "Kieran Tierney",
+            "birth": "1997-06-05",
+            "nationality": "SCO",
+            "role": "defender",
+            "value": 2.5e7,
+            "number": 3,
+            "pictures": [
+                "./player_images/kieran_tierney_1.png",
+                "./player_images/kieran_tierney_2.png"
+            ]
+        },
+        {
+            "name": "Ben White",
+            "birth": "1997-11-08",
+            "nationality": "ENG",
+            "role": "defender",
+            "value": 5.0e7,
+            "number": 4,
+            "pictures": [
+                "./player_images/ben_white_1.png",
+                "./player_images/ben_white_2.png"
+            ]
+        },
+        {
+            "name": "Takehiro Tomiyasu",
+            "birth": "1998-11-05",
+            "nationality": "JPN",
+            "role": "defender",
+            "value": 2.5e7,
+            "number": 18,
+            "pictures": [
+                "./player_images/takehiro_tomiyasu_1.png",
+                "./player_images/takehiro_tomiyasu_2.png"
+            ]
+        },
+        {
+            "name": "Thomas Partey",
+            "birth": "1993-06-13",
+            "nationality": "GHA",
+            "role": "midfielder",
+            "value": 3.8e7,
+            "number": 5,
+            "pictures": [
+                "./player_images/thomas_partey_1.png",
+                "./player_images/thomas_partey_2.png"
+            ]
+        },
+        {
+            "name": "Jorginho Luiz",
+            "birth": "1991-12-20",
+            "nationality": "ITA",
+            "role": "midfielder",
+            "value": 3.5e7,
+            "number": 20,
+            "pictures": [
+                "./player_images/jorginho_luiz_1.png",
+                "./player_images/jorginho_luiz_2.png"
+            ]
+        },
+        {
+            "name": "Mohamed Elneny",
+            "birth": "1992-07-11",
+            "nationality": "EGY",
+            "role": "midfielder",
+            "value": 9.0e6,
+            "number": 25,
+            "pictures": [
+                "./player_images/mohamed_elneny_1.png",
+                "./player_images/mohamed_elneny_2.png"
+            ]
+        },
+        {
+            "name": "Granit Xhaka",
+            "birth": "1992-09-27",
+            "nationality": "CHE",
+            "role": "midfielder",
+            "value": 2.8e7,
+            "number": 34,
+            "pictures": [
+                "./player_images/granit_xhaka_1.png",
+                "./player_images/granit_zhaka_2.png"
+            ]
+        },
+        {
+            "name": "Martin Odegaard",
+            "birth": "1998-12-17",
+            "nationality": "NOR",
+            "role": "midfielder",
+            "value": 8.0e7,
+            "number": 8,
+            "pictures": [
+                "./player_images/martin_odegaard_1.png",
+                "./player_images/martin_odegaard_2.png"
+            ]
+        },
+        {
+            "name": "Emile Smith-Rowe",
+            "birth": "2000-07-28",
+            "nationality": "ENG",
+            "role": "midfielder",
+            "value": 3.8e7,
+            "number": 10,
+            "pictures": [
+                "./player_images/emile_smith-rowe_1.png",
+                "./player_images/emile_smith-rowe_2.png"
+            ]
+        },
+        {
+            "name": "Fabio Vieira",
+            "birth": "2000-05-30",
+            "nationality": "PRT",
+            "role": "midfielder",
+            "value": 2.7e7,
+            "number": 21,
+            "pictures": [
+                "./player_images/fabio_vieira_1.png",
+                "./player_images/fabio_vieira_2.png"
+            ]
+        },
+        {
+            "name": "Gabriel Martinelli",
+            "birth": "2001-06-18",
+            "nationality": "BRA",
+            "role": "attacker",
+            "value": 7.0e7,
+            "number": 11,
+            "pictures": [
+                "./player_images/gabriel_martinelli_1.png",
+                "./player_images/gabriel_martinelli_2.png"
+            ]
+        },
+        {
+            "name": "Leandro Trossard",
+            "birth": "1994-12-04",
+            "nationality": "BEL",
+            "role": "attacker",
+            "value": 3.0e7,
+            "number": 19,
+            "pictures": [
+                "./player_images/leandro_trossard_1.png",
+                "./player_images/leandro_trossard_2.png"
+            ]
+        },
+        {
+            "name": "Bukayo Saka",
+            "birth": "2001-09-05",
+            "nationality": "ENG",
+            "role": "attacker",
+            "value": 1.1e8,
+            "number": 7,
+            "pictures": [
+                "./player_images/bukayo_saka_1.png",
+                "./player_images/bukayo_saka_2.png"
+            ]
+        },
+        {
+            "name": "Reiss Nelson",
+            "birth": "1999-12-10",
+            "nationality": "ENG",
+            "role": "attacker",
+            "value": 0.07e8,
+            "number": 24,
+            "pictures": [
+                "./player_images/reiss_nelson_1.png",
+                "./player_images/reiss_nelson_2.png"
+            ]
+        },
+        {
+            "name": "Gabriel Jesus",
+            "birth": "1997-04-03",
+            "nationality": "BRA",
+            "role": "attacker",
+            "value": 7.50e7,
+            "number": 9,
+            "pictures": [
+                "./player_images/gabriel_jesus_1.png",
+                "./player_images/gabriel_jesus_2.png"
+            ]
+        },
+        {
+            "name": "Eddie Nketiah",
+            "birth": "1999-05-03",
+            "nationality": "ENG",
+            "role": "attacker",
+            "value": 2.5e7,
+            "number": 14,
+            "pictures": [
+                "./player_images/eddie_nketiah_1.png",
+                "./player_images/eddie_nketiah_2.png"
+            ]
+        }
+    ]
+}

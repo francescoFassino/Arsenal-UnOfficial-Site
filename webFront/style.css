@@ -1,0 +1,11 @@
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+.social img{
+    height: 70px;
+}
+
+.sponsor img{
+    height: 70px;
+}
+
+ 
