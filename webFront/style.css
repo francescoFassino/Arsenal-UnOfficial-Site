@@ -1,11 +1,26 @@
-@import "./node_modules/bootstrap/scss/bootstrap.scss";
-
 .social img{
     height: 70px;
 }
-
 .sponsor img{
     height: 70px;
 }
-
- 
+#champions_league{
+    color: #008bfe;
+}
+#europa_league{
+    color: #ef780a;
+}
+#conference_league{
+    color: #00d44b;
+}
+#relegation{
+    color: red;
+} 
+.isClickable:hover{
+    cursor: pointer;
+    background-color: #00d44b;
+}
+#presentation{
+    background-color: red;
+    color: white;
+}

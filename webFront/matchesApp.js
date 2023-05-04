@@ -12,13 +12,13 @@ request.onload = function(){
     const prem_week = data.week;
     // teams [from 0 to 19]
     const teams = data.teams;
-    let columns, row, stats;
+    let columns, row, stats, sortedTeams = [];
     for(let i = 0; i < 20; i++){
         row = document.createElement('tr');
         stats = getStats(prem_week, teams[i].name);
         columns = `   
-            <td>${(i+1)}</td>
-            <td><img height="30px" class="img-fluid" src="team_images/${teams[i].code}.png"></td>
+            <td scope="row">${(i+1)}</td>
+            <td><img height="20px" class="img-thumbnail" src="team_images/${teams[i].code}.png"></td>
             <td>${teams[i].name}</td>
             <td>${stats[0]}</td>
             <td>${stats[1]}</td>
@@ -30,8 +30,32 @@ request.onload = function(){
             <td><b>${stats[7]}</b></td>
         `;
         row.innerHTML = columns;
-        table_body.appendChild(row);
+        sortedTeams[i] = row;
+        // table_body.appendChild(row);
     }
+    console.log(sortedTeams);
+    sortedTeams.sort((a, b) => b.stats[7] - a.stats[7]);
+    sortedTeams.forEach((team, i) => {
+        let stats = team.stats;
+        let cols = `
+            <td scope="row">${(i+1)}</td>
+            <td><img height="30px" class="img-fluid" src="team_images/${team.code}.png"></td>
+            <td>${team.name}</td>
+            <td>${stats[0]}</td>
+            <td>${stats[1]}</td>
+            <td>${stats[2]}</td>
+            <td>${stats[3]}</td>
+            <td>${stats[4]}</td>
+            <td>${stats[5]}</td>
+            <td>${stats[6]}</td>
+            <td><b>${stats[7]}</b></td>
+        `;
+        // Stampiamo la riga nella tabella
+        row.innerHTML = cols;
+        document.querySelector('#matchesTable').innerHTML += row;
+        table_body.appendChild(row);
+      });
+      
 }
 
 // this function get as parameters the prem_week array, which contains all the matches for every week
@@ -125,18 +149,17 @@ function sortTable(n) {
         one from current row and one from the next: */
         x = rows[i].getElementsByTagName('td')[n];
         y = rows[i + 1].getElementsByTagName('td')[n];
+
         // x = parseInt(x.innerHTML);
         // y = parseInt(y.innerHTML);
         /* Check if the two rows should switch place,
         based on the direction, asc or desc: */
         if (dir == "asc") {
-          // if the column is 0 or 4, parse it to sort 
-          
+            // if the column is 0 or 4, parse it to sort 
             if(parseInt(x.innerHTML) > parseInt(y.innerHTML)) {
               shouldSwitch = true;
               break;
             }
-          
         } else if (dir == "desc") {
             if(parseInt(x.innerHTML) < parseInt(y.innerHTML)) {
               shouldSwitch = true;
@@ -160,5 +183,10 @@ function sortTable(n) {
           switching = true;
         }
       }
+    }
+
+    // cambiare posizioni
+    for(let i=0; i < 20; i++){
+        table.firstElementChild = (++i)
     }
   }

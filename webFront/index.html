@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Arsenal FC  UnOfficial Website | Home</title>
-        <link rel="stylesheet" href="style.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <!-- <link rel="stylesheet" href="https://pictogrammers.com/library/mdi/icon/usb-flash-drive/" class="re"> -->
+      <title>Arsenal FC UnOfficial Website | Home</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="style.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+      <link rel="icon" href="images/arsenal_logo.png" type="image/png">
     </head>
     <body>
+        <!-- Contenuto della pagina -->      
         <!-- menu               logo                abbonamenti    -->
         <!--                 presentazione                  social -->
         <!-- squadra                acquisto biglietti      social -->
@@ -15,73 +20,166 @@
         <!-- risultati              acquisto biglietti      social -->
         
         <!-- Nav Bar -->     
-        <nav class="navbar bg-body-tertiary top_bar">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary bg-danger">
           <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-              <img src="./images/arsenal_logo.png" alt="Logo" width="60" height="70" class="d-inline-block align-text-top">
-            </a>
-            <a href="scoreboard.html" class="navbar-brand">A</a>
+            <img src="./images/arsenal_logo.png" alt="Logo" width="60" height="70" class="d-inline-block align-text-top">
+            <div class="collapse navbar-collapse">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">
+                    Home <i class="fa-solid fa-house"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.arsenal.com/tickets?field_arsenal_team_target_id=1&revision_information=" target="_blank">
+                    Tickets <i class="fa-solid fa-ticket fa-xl"></i>
+                  </a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li> -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Social
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                    <li><a class="dropdown-item" href="https://instagram.com/arsenal/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
+                    <li><a class="dropdown-item" href="https://twitter.com/Arsenal" target="_blank"><i class="fa-brands fa-twitter fa-2xl"></i></a></li>
+                    <li><a class="dropdown-item" href="https://www.facebook.com/Arsenal/" target="_blank"><i class="fa-brands fa-facebook fa-2xl"></i></a></li>
+                    <li><a class="dropdown-item" href="https://www.youtube.com/arsenal" target="_blank"><i class="fa-brands fa-youtube fa-2xl"></i></a></li>
+                    <li><a class="dropdown-item" href="https://www.twitch.tv/arsenalofficial" target="_blank"><i class="fa-brands fa-twitch fa-2xl"></i></a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
 
-        <!-- Presentazione società -->
-        <!-- <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="images/640x360.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="images/640x360.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="images/640x360.png" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div> -->
+        <!-- <div class="container sponsor">
+          <div class="container"><a href="https://www.emirates.com/it/italian/" target="_blank"><img src="images/emirates_logo.png" class="img-thumbnail" alt="Emirates" height="20px"></a></div>
+          <div class="container"><a href="https://drinkprime.com/" target="_blank"><img src="images/prime_logo.png" class="img-thumbnail" alt="Prime" height="20px"></a></div>
+        </div> -->
 
-        <!-- Link per visitare la squadra -->
-        <div class="container card text-center" style="width: 18rem;">
+        <!-- Presentazione società -->
+        <div class="container" id="presentation"><h1>Presentation</h1></div>
+        <div id="myCarousel" class="container carousel slide" data-bs-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/emirates_stadium.png" class="d-block w-100" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img src="images/emirates_stadium_2.png" class="d-block w-100" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img src="images/emirates_stadium_3.png" class="d-block w-100" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img src="images/emirates_stadium_4.png" class="d-block w-100" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img src="images/emirates_stadium_5.png" class="d-block w-100" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img src="images/dressing_room.png" class="d-block w-100" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img src="images/dressing_room_2.png" class="d-block w-100" alt="Third slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
+
+        
+        <div class=" row row-cols-2 row-cols-md-3 g-3">
+          <!-- Link per visitare la squadra -->
+          <div class="container card text-center" style="width: 18rem;">
             <img src="images/first_team.png" class="card-img-top" alt="First Team">
             <div class="card-body">
               <!-- da sistemare la linea sotto il link (non deve esserci) e mettere link-underline-opacity-75-hover -->
               <h5><a href="firstTeam.html" class="link-danger link-underline link-underline-opacity-0 ">First Team</a></h5>
             </div>
+          </div>
+
+          <!-- Classifica -->
+          <div class="container card text-center" style="width: 18rem;">
+            <img src="images/teams_scoreboard.png" class="card-img-top" alt="First Team">
+            <div class="card-body">
+              <!-- da sistemare la linea sotto il link (non deve esserci) e mettere link-underline-opacity-75-hover -->
+              <h5><a href="scoreboard.html" class="link-danger link-underline link-underline-opacity-0">Scoreboard</a></h5>
+            </div>
+          </div>
         </div>
+        
 
         <!-- Abbonamenti -->
-        <!-- Classifica -->
         <!-- Partite -->
+        <!-- aggiungere un modo per visulizzare la prossima partita -->
         <!-- Acquisto biglietti -->
         
-        <!-- social -->
-        <div class="container social">
-            <a href="https://instagram.com/arsenal/" target="_blank">   <img src="images/instagram_icon.png" class="img-thumbnail" alt="Instagram" height="20px">   </a>
-            <a href="https://twitter.com/Arsenal" target="_blank">          <img src="images/twitter_logo.png" alt="Twitter" height="20px">                             </a>
-        </div>
-
-        <!-- link json squadre premier league -->
-        <!-- https://gist.github.com/yogacp/94757ff64e6b459e2adab9aa1605781f -->
-       <!-- https://github.com/niraj-ui/English-premier-matches/blob/master/2015-2016.json.txt -->
+        
 
     </body>
-    <footer>
-         <!-- sponsor  -->
-         <div class="container sponsor">
-            <a href="https://www.emirates.com/it/italian/" target="_blank"> <img src="images/emirates_logo.png" class="img-thumbnail" alt="Emirates" height="20px">     </a>
-            <a href="https://drinkprime.com/" target="_blank">              <img src="images/prime_logo.png" class="img-thumbnail" alt="Prime" height="20px">           </a>
+    <!-- <footer>
+        sponsor  
+        <div class="container sponsor">
+          <div class="container"><a href="https://www.emirates.com/it/italian/" target="_blank"><img src="images/emirates_logo.png" class="img-fluid" alt="Emirates" height="20px"></a></div>
+          <div class="container"><a href="https://drinkprime.com/" target="_blank"><img src="images/prime_logo.png" class="img-thumbnail" alt="Prime" ></a></div>
         </div>
+    </footer> -->
+    <footer class="bg-danger text-black py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Follow us</h5>
+            <ul class="list-unstyled">
+              <li><a class="dropdown-item" href="https://instagram.com/arsenal/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
+              <li><a class="dropdown-item" href="https://twitter.com/Arsenal" target="_blank"><i class="fa-brands fa-twitter fa-2xl"></i></a></li>
+              <li><a class="dropdown-item" href="https://www.facebook.com/Arsenal/" target="_blank"><i class="fa-brands fa-facebook fa-2xl"></i></a></li>
+              <li><a class="dropdown-item" href="https://www.youtube.com/arsenal" target="_blank"><i class="fa-brands fa-youtube fa-2xl"></i></a></li>
+              <li><a class="dropdown-item" href="https://www.twitch.tv/arsenalofficial" target="_blank"><i class="fa-brands fa-twitch fa-2xl"></i></a></li>
+            </ul>
+          </div>
+          <!-- <div class="col-md-4">
+            <h5>Products</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Product 1</a></li>
+              <li><a href="#">Product 2</a></li>
+              <li><a href="#">Product 3</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Connect</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div> -->
+        </div>
+      </div>
     </footer>
 </html>
+
+
+<!-- cose da finire:
+  - finire la parte sulle card dei giocatori
+  - fare la tabella dei giocatori, mettendo le bandiere delle nazioni
+  - sistemare tutti gli header delle pagine
+  - sistemare le navbar delle pagine
+  - sistemare la parte degli sponsor e dei social
+  - aggiustare la classifica in modo che venga visulizzata per prima come clasifica normale e poi con gli altri sort
+  - aggiungere un modo per visulizzare la prossima partita
+  - aggiornare gli ultimi risultati nel json
+-->

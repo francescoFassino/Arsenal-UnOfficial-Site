@@ -69,7 +69,7 @@
             "number": 16,
             "pictures": [
                 "./player_images/rob_holding_1.png",
-                "./player_images/rob_holdin_2.png"
+                "./player_images/rob_holding_2.png"
             ]
         },
         {
@@ -165,7 +165,7 @@
             "number": 34,
             "pictures": [
                 "./player_images/granit_xhaka_1.png",
-                "./player_images/granit_zhaka_2.png"
+                "./player_images/granit_xhaka_2.png"
             ]
         },
         {

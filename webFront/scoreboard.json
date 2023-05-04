@@ -2128,7 +2128,19 @@
                     "date": "2023-04-22",
                     "team1": "Brentford",
                     "team2": "Aston Villa",
-                    "score": "1-1"
+                    "score": "2-0"
+                },
+                {
+                    "date": "2023-04-22",
+                    "team1": "Newcastle",
+                    "team2": "Nottingham Forest",
+                    "score": "2-0"
+                },
+                {
+                    "date": "2023-04-22",
+                    "team1": "Tottenham",
+                    "team2": "Southampton",
+                    "score": "4-1"
                 },
                 {
                     "date": "2023-04-23",
