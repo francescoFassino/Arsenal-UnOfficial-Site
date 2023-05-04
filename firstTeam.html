@@ -51,11 +51,21 @@
       </nav>
       
       <!-- link to the firstTeam_table page -->
-      <a class="container link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="firstTeam_table.html">
+      <div class="container"><a class="container link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="firstTeam_table.html">
         First team table
-      </a>
+      </a></div>
+      <!--  -->
 
       <!-- group cards made by playersApp.js -->
-      <div class="container row row-cols-1 row-cols-md-3 g-4" id="first_team"></div>
+      <div class="container">
+        <p class="text-bg-warning text-center fs-2">GOALKEEPERS</p>
+        <div class="container rounded-3 row row-cols-1 row-cols-md-3 g-4" id="goalkeepers"></div>
+        <p class="text-bg-success text-center fs-2">DEFENDERS</p>
+        <div class="container row row-cols-1 row-cols-md-3 g-4" id="defenders"></div>
+        <p class="text-bg-info text-center fs-2">MIDFIELDERS</p>
+        <div class="container row row-cols-1 row-cols-md-3 g-4" id="midfielders"></div>
+        <p class="text-bg-danger text-center fs-2">ATTACKERS</p>
+        <div class="container row row-cols-1 row-cols-md-3 g-4" id="attackers"></div>
+      </div>
     </body>
 </html>

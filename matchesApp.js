@@ -28,34 +28,13 @@ request.onload = function(){
             <td>${stats[5]}</td>
             <td>${stats[6]}</td>
             <td><b>${stats[7]}</b></td>
+            <td>AA</td>
         `;
         row.innerHTML = columns;
-        // sortedTeams[i] = row;
+        // console.log(sortedTeams)
+        // sortTable(5);
         table_body.appendChild(row);
     }
-    console.log(sortedTeams);
-    sortedTeams.sort((a, b) => b.stats[7] - a.stats[7]);
-    sortedTeams.forEach((team, i) => {
-        let stats = team.stats;
-        let cols = `
-            <td scope="row">${(i+1)}</td>
-            <td><img height="30px" class="img-fluid" src="team_images/${team.code}.png"></td>
-            <td>${team.name}</td>
-            <td>${stats[0]}</td>
-            <td>${stats[1]}</td>
-            <td>${stats[2]}</td>
-            <td>${stats[3]}</td>
-            <td>${stats[4]}</td>
-            <td>${stats[5]}</td>
-            <td>${stats[6]}</td>
-            <td><b>${stats[7]}</b></td>
-        `;
-        // Stampiamo la riga nella tabella
-        row.innerHTML = cols;
-        document.querySelector('#matchesTable').innerHTML += row;
-        table_body.appendChild(row);
-      });
-      
 }
 
 // this function get as parameters the prem_week array, which contains all the matches for every week
@@ -149,7 +128,7 @@ function sortTable(n) {
         one from current row and one from the next: */
         x = rows[i].getElementsByTagName('td')[n];
         y = rows[i + 1].getElementsByTagName('td')[n];
-
+        console.log(n)
         // x = parseInt(x.innerHTML);
         // y = parseInt(y.innerHTML);
         /* Check if the two rows should switch place,
@@ -165,7 +144,6 @@ function sortTable(n) {
               shouldSwitch = true;
               break;
             }
-          
         }
       }
       if (shouldSwitch) {
@@ -184,9 +162,5 @@ function sortTable(n) {
         }
       }
     }
-
-    // cambiare posizioni
-    for(let i=0; i < 20; i++){
-        table.firstElementChild = (++i)
-    }
   }
+  

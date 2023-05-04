@@ -58,21 +58,22 @@
                 <th scope="col" width="1%">Image</th>
                 <th scope="col">Team</th>
                 <th scope="col">GP</th>
-                <th scope="col" onclick="sortTable(4)" class="isClickable">W</th>
-                <th scope="col" onclick="sortTable(5)" class="isClickable">L</th>
-                <th scope="col" onclick="sortTable(6)" class="isClickable">T</th>
-                <th scope="col" onclick="sortTable(7)" class="isClickable">GS</th>
-                <th scope="col" onclick="sortTable(8)" class="isClickable">GC</th>
-                <th scope="col" onclick="sortTable(9)" class="isClickable">GD</th>
+                <th scope="col" onclick="sortTable(4)" class="isClickable"><span class="badge rounded-pill text-bg-success">W</span></th>
+                <th scope="col" onclick="sortTable(5)" class="isClickable"><span class="badge rounded-pill text-bg-danger">L</span></th>
+                <th scope="col" onclick="sortTable(6)" class="isClickable"><span class="badge rounded-pill text-bg-warning">T</span></th>
+                <th scope="col" onclick="sortTable(7)" class="isClickable"><span class="badge rounded-pill text-bg-info">GS</span></th>
+                <th scope="col" onclick="sortTable(8)" class="isClickable"><span class="badge rounded-pill text-bg-secondary">GC</span></th>
+                <th scope="col" onclick="sortTable(9)" class="isClickable"><span class="badge rounded-pill text-bg-primary">GD</span></th>
                 <th scope="col" onclick="sortTable(10)" class="isClickable">PT</th>
+                <th>WW</th>
             </tr>
           </thead>
           <tbody id="matchesTable_body">
             <!-- tr caricati da js -->
-            <!-- bug: se si preme sui punti per fare il sort, esegue il sort dei pareggi -->
-            <!-- bug: se si preme su goal difference per fare il sort, esegue il sort delle sconfitte -->
           </tbody>
         </table>
       </div>
+      
+      <div class="container">Legenda</div>
     </body>
 </html>
