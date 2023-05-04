@@ -37,9 +37,9 @@ request.onload = function(){
         <td>${(currentPlayer.value/1000000)+"M€"}</td>
       `;
       card.innerHTML = element_card;
-      row.innerHTML = element_rowTable;
+      // row.innerHTML = element_rowTable;
       firstTeam.appendChild(card);
-      firstTeam_table.appendChild(table);
+      // firstTeam_table.appendChild(table);
     }
 //         // creazione di un elemento
 //         row = document.createElement('tr');

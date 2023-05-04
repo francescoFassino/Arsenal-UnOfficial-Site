@@ -30,8 +30,8 @@ request.onload = function(){
             <td><b>${stats[7]}</b></td>
         `;
         row.innerHTML = columns;
-        sortedTeams[i] = row;
-        // table_body.appendChild(row);
+        // sortedTeams[i] = row;
+        table_body.appendChild(row);
     }
     console.log(sortedTeams);
     sortedTeams.sort((a, b) => b.stats[7] - a.stats[7]);
