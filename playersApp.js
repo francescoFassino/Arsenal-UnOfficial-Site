@@ -1,4 +1,4 @@
-let requestUrl = './players_data.json'; 
+let requestUrl = 'https://francescofassino.github.io/Arsenal-UnOfficial-Site/players_data.json'; 
 let request = new XMLHttpRequest();
 request.open('GET', requestUrl);
 request.responseType = 'json';

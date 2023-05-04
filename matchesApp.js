@@ -1,4 +1,4 @@
-let requestUrl = './scoreboard.json'; 
+let requestUrl = 'https://francescofassino.github.io/Arsenal-UnOfficial-Site/scoreboard.json'; 
 let request = new XMLHttpRequest();
 request.open('GET', requestUrl);
 request.responseType = 'json';
