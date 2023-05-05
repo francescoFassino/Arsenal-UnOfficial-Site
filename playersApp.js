@@ -32,7 +32,6 @@ request.onload = function(){
       `;
 
       card.innerHTML = element_card;
-
       // dividere in base al ruolo
       roleString = JSON.stringify(currentPlayer.role);
       role = JSON.parse(roleString);

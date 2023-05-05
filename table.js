@@ -7,68 +7,45 @@ request.send();
 request.onload = function(){
     const data = request.response;
     const playerTable = document.getElementById("firstTeam_body");
-    let row, numberColumn, nameColumn, nationalityColumn, birthColumn, valueColumn, playerImage, number, name, nationality, birth, value;
+    let row, currentPlayer, role, roleString;
+    let element_rowTable;
     for(let i in data.players){
-        // creazione di un elemento
-        row = document.createElement('tr');
-        numberColumn = document.createElement('td');
-        nameColumn = document.createElement('td');
-        nationalityColumn = document.createElement('td');
-        birthColumn = document.createElement('td');
-        valueColumn = document.createElement('td');
-        playerImage = document.createElement('img');
-        number = document.createTextNode(data.players[i].number);
-        name = document.createTextNode(data.players[i].name);
-        nationality = document.createTextNode(data.players[i].nationality);
-        birth = document.createTextNode(data.players[i].birth);
-        value = document.createTextNode(transform(data.players[i].value));
-        // setAttribute, setta il src dell'elemento img al secondo parametro
-        // append: aggiunge testo o immagine all'elemento chiamante del metodo
-        playerImage.setAttribute("src", data.players[i].pictures[0]);
-        playerImage.setAttribute("class", "img-fluid");
-        playerImage.setAttribute("height", "80px");
-        numberColumn.appendChild(number);
-        nameColumn.appendChild(name);
-        nationalityColumn.appendChild(nationality);
-        birthColumn.appendChild(birth);
-        valueColumn.appendChild(value);
-        
-        row.appendChild(playerImage);
-        row.appendChild(numberColumn);
-        row.appendChild(nameColumn);
-        row.appendChild(nationalityColumn);
-        row.appendChild(birthColumn);
-        row.appendChild(valueColumn);
-        let roleString = JSON.stringify(data.players[i].role);
-        let role = JSON.parse(roleString);
-        switch (role){
-            case "goalkeeper":
-                row.setAttribute("class", "table-warning");
-                break;
-            case "defender":
-                row.setAttribute("class", "table-success");
-                break;
-            case "midfielder":
-                row.setAttribute("class", "table-info");
-                break;
-            case "attacker":
-                row.setAttribute("class", "table-danger");
-                break;    
-            default:
-                console.log("none");
-                break;    
-        }
-        // console.log("£");
-        playerTable.appendChild(row);
+      // creazione di un elemento
+      row = document.createElement('tr');
+      currentPlayer = data.players[i];
+
+      element_rowTable = `
+        <td><img class="img-fluid" src="${currentPlayer.pictures[0]}"></td>
+        <td>${currentPlayer.number}</td>
+        <td>${currentPlayer.name}</td>
+        <td>${currentPlayer.nationality}</td>
+        <td>${currentPlayer.birth}</td>
+        <td>${(currentPlayer.value/1000000)+"M€"}</td>
+      `;
+      row.innerHTML = element_rowTable;
+      roleString = JSON.stringify(data.players[i].role);
+      role = JSON.parse(roleString);
+      switch (role){
+          case "goalkeeper":
+              row.setAttribute("class", "table-warning");
+              break;
+          case "defender":
+              row.setAttribute("class", "table-success");
+              break;
+          case "midfielder":
+              row.setAttribute("class", "table-info");
+              break;
+          case "attacker":
+              row.setAttribute("class", "table-danger");
+              break;    
+          default:
+              console.log("none");
+              break;    
+      }
+      playerTable.appendChild(row);
     }
 }
-// this function transform the value of the player to the match value express in €M
-function transform(value){
-    return (parseInt(value)/1000000) + "M€";
-}
-// function that changes the visibility of the table according to the sort selected
-// role order(default), alphabetic order, number order, value order, age order
-function sortTable(n) {
+  function sortTable(n) {
     let table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
     table = document.getElementById("firstTeam");
     switching = true;
@@ -94,7 +71,7 @@ function sortTable(n) {
         console.log(n);
         if (dir == "asc") {
           // if the column is 0 or 4, parse it to sort 
-          if(n == 0 || n == 4) {
+          if(n == 1 || n == 5) {
             if(parseInt(x.innerHTML) > parseInt(y.innerHTML)) {
               shouldSwitch = true;
               break;
@@ -107,7 +84,7 @@ function sortTable(n) {
             }
           }
         } else if (dir == "desc") {
-          if(n == 0 || n == 4) {
+          if(n == 1 || n == 5) {
             if(parseInt(x.innerHTML) < parseInt(y.innerHTML)) {
               shouldSwitch = true;
               break;

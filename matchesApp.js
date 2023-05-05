@@ -12,7 +12,7 @@ request.onload = function(){
     const prem_week = data.week;
     // teams [from 0 to 19]
     const teams = data.teams;
-    let columns, row, stats, sortedTeams = [];
+    let columns, row, stats;
     for(let i = 0; i < 20; i++){
         row = document.createElement('tr');
         stats = getStats(prem_week, teams[i].name);
@@ -27,14 +27,12 @@ request.onload = function(){
             <td>${stats[4]}</td>
             <td>${stats[5]}</td>
             <td>${stats[6]}</td>
-            <td><b>${stats[7]}</b></td>
-            <td>AA</td>
+            <td style="font-weight: bold;">${stats[7]}</td>
         `;
         row.innerHTML = columns;
-        // console.log(sortedTeams)
-        // sortTable(5);
         table_body.appendChild(row);
     }
+    sortTable(10, "desc");
 }
 
 // this function get as parameters the prem_week array, which contains all the matches for every week
@@ -106,35 +104,19 @@ function getStats(prem_week, team_name){
 }
 
 // function that changes the visibility of the table according to the sort selected
-// role order(default), alphabetic order, number order, value order, age order
-function sortTable(n) {
-    let table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+// points order(default), wins order, losses order, ties order, goal scored order, goal conceded order, goal difference order
+function sortTable(n, dir = "asc") {
+    let table, rows, switching, i, x, y, shouldSwitch, switchcount = 0;
     table = document.getElementById("matchesTable");
     switching = true;
-    // Set the sorting direction to ascending:
-    dir = "asc";
-    /* Make a loop that will continue until
-    no switching has been done: */
     while (switching) {
-      // Start by saying: no switching is done:
       switching = false;
       rows = table.rows;
-      /* Loop through all table rows (except the
-      first, which contains table headers): */
       for (i = 1; i < (rows.length - 1); i++) {
-        // Start by saying there should be no switching:
         shouldSwitch = false;
-        /* Get the two elements you want to compare,
-        one from current row and one from the next: */
         x = rows[i].getElementsByTagName('td')[n];
         y = rows[i + 1].getElementsByTagName('td')[n];
-        console.log(n)
-        // x = parseInt(x.innerHTML);
-        // y = parseInt(y.innerHTML);
-        /* Check if the two rows should switch place,
-        based on the direction, asc or desc: */
         if (dir == "asc") {
-            // if the column is 0 or 4, parse it to sort 
             if(parseInt(x.innerHTML) > parseInt(y.innerHTML)) {
               shouldSwitch = true;
               break;
@@ -147,20 +129,24 @@ function sortTable(n) {
         }
       }
       if (shouldSwitch) {
-        /* If a switch has been marked, make the switch
-        and mark that a switch has been done: */
         rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
         switching = true;
-        // Each time a switch is done, increase this count by 1:
         switchcount ++;
       } else {
-        /* If no switching has been done AND the direction is "asc",
-        set the direction to "desc" and run the while loop again. */
         if (switchcount == 0 && dir == "asc") {
           dir = "desc";
           switching = true;
         }
       }
     }
+
+    adjust(table);
   }
   
+  function adjust(table){
+    let rows = table.rows;
+    let cols = table.cols;
+    for(let i = 1; i < rows.length; i++) {
+        rows[i].children[0].innerHTML = i;
+    }
+  }
